@@ -1,0 +1,21 @@
+{
+    "name": "nocompromises/php-cs-fixer-config",
+    "description": "The standard PHP CS Fixer config for No Compromises projects",
+    "type": "library",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^3.40",
+        "php": "~8.2.0 || ~8.3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joel Clermont",
+            "email": "joel@nocompromises.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NoCompromises\\PhpCsFixer\\Config\\": "src"
+        }
+    }
+}
