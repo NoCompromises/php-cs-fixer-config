@@ -19,6 +19,9 @@
         }
     },
     "scripts": {
+        "ci": [
+            "@composer phpcs"
+        ],
         "phpcs": [
             "php-cs-fixer check"
         ],
@@ -27,6 +30,7 @@
         ]
     },
     "scripts-descriptions": {
+        "ci": "Runs tasks that should be done for integration",
         "phpcs": "Runs php-cs-fixer and reports issues",
         "phpcs-fix": "Runs php-cs-fixer and automatically fixes any issues"
     }
