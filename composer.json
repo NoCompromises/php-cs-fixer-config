@@ -17,5 +17,17 @@
         "psr-4": {
             "NoCompromises\\PhpCsFixer\\Config\\": "src"
         }
+    },
+    "scripts": {
+        "phpcs": [
+            "php-cs-fixer check"
+        ],
+        "phpcs-fix": [
+            "php-cs-fixer fix"
+        ]
+    },
+    "scripts-descriptions": {
+        "phpcs": "Runs php-cs-fixer and reports issues",
+        "phpcs-fix": "Runs php-cs-fixer and automatically fixes any issues"
     }
 }

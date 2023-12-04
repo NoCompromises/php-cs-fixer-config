@@ -8,7 +8,6 @@ use PhpCsFixer\RuleSet\AbstractRuleSetDescription;
 
 class NoCompromisesSet extends AbstractRuleSetDescription
 {
-
     public function getDescription(): string
     {
         return 'Rule set as used by No Compromises.';
