@@ -22,6 +22,7 @@ class Factory
             ->in($projectRoot)
             ->exclude([
                 'bootstrap/cache',
+                'node_modules',
                 'storage',
             ])
             ->notPath([
