@@ -18,6 +18,7 @@ class NoCompromisesSet extends AbstractRuleSetDescription
         return [
             '@PhpCsFixer' => true,
             '@PhpCsFixer:risky' => true,
+            'declare_strict_types' => true,
 
             // this is part of PhpCsFixer but something is overriding it later
             'single_line_empty_body' => true,
