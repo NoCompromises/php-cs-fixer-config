@@ -35,6 +35,9 @@ class NoCompromisesSet extends AbstractRuleSetDescription
             'concat_space' => [
                 'spacing' => 'one', // default is 'none'
             ],
+            'fully_qualified_strict_types' => [
+                'import_symbols' => false, // default is true
+            ],
             'function_declaration' => [
                 'closure_fn_spacing' => 'none', // default is 'one'
             ],
