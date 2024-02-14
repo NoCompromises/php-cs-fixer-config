@@ -1,4 +1,4 @@
-name: QuadJobs CI
+name: CI
 
 on: push
 
@@ -20,7 +20,7 @@ jobs:
         run: composer validate --ansi --strict
 
       - name: Cache composer dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: vendor
           key: composer-${{ hashFiles('composer.lock') }}

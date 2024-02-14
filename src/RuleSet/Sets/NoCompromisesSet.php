@@ -62,7 +62,6 @@ class NoCompromisesSet extends AbstractRuleSetDescription
 
             // disable things from PhpCsFixer
             'combine_consecutive_unsets' => false,
-            'escape_implicit_backslashes' => false,
             'increment_style' => false,
             'multiline_comment_opening_closing' => false,
             'multiline_whitespace_before_semicolons' => false,
@@ -76,6 +75,7 @@ class NoCompromisesSet extends AbstractRuleSetDescription
             'single_line_comment_style' => false,
             'single_quote' => false,
             'static_lambda' => false,
+            'string_implicit_backslashes' => false,
             'yoda_style' => false,
 
             // disable things from Symfony
