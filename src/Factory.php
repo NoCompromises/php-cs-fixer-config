@@ -6,6 +6,7 @@ namespace NoCompromises\PhpCsFixer\Config;
 
 use NoCompromises\PhpCsFixer\Config\RuleSet\Sets\NoCompromisesSet;
 use PhpCsFixer\Config;
+use PhpCsFixer\Runner\Parallel\ParallelConfigFactory;
 
 class Factory
 {
@@ -28,6 +29,8 @@ class Factory
             ->notPath([
                 '_ide_helper.php',
             ]);
+
+        $config->setParallelConfig(ParallelConfigFactory::detect());
 
         return $config;
     }
