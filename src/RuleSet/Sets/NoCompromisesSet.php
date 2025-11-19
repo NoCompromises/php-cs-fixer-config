@@ -4,13 +4,23 @@ declare(strict_types=1);
 
 namespace NoCompromises\PhpCsFixer\Config\RuleSet\Sets;
 
-use PhpCsFixer\RuleSet\AbstractRuleSetDescription;
+use PhpCsFixer\RuleSet\RuleSetDefinitionInterface;
 
-class NoCompromisesSet extends AbstractRuleSetDescription
+class NoCompromisesSet implements RuleSetDefinitionInterface
 {
     public function getDescription(): string
     {
         return 'Rule set as used by No Compromises.';
+    }
+
+    public function getName(): string
+    {
+        return 'NoCompromises';
+    }
+
+    public function isRisky(): bool
+    {
+        return true;
     }
 
     public function getRules(): array
