@@ -3,7 +3,7 @@
     "description": "The standard PHP CS Fixer config for No Compromises projects",
     "type": "library",
     "require": {
-        "friendsofphp/php-cs-fixer": "^3.40",
+        "friendsofphp/php-cs-fixer": "^3.89",
         "php": "^8.0"
     },
     "license": "MIT",
